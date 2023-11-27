@@ -3,7 +3,7 @@
 }
 
 .bg-img {
-    width: 100%;
+    width: 100vw;
     background-image: url("../assets/HomeImg/bg-img.jpg");
     -webkit-filter: blur(0px);
     filter: blur(2px);
@@ -30,7 +30,7 @@
     display: flex;
     /* border: 2px solid red; */
     gap: 3vw;
-    margin: 1vw 8vw;
+    margin: 5vw 1vw;
 }
 .btn{
     width: 100px;
@@ -47,9 +47,10 @@
 }
 .dropdown{
     position: absolute;
-    top: 35%;
-    left: 34%;
+    top: 25%;
+    left: 40%;
 }
+
 .dropdown-toggle{   
     width: 30vw;
     /* box-shadow: 0 0 10px #eee8e8; */
