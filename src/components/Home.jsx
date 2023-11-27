@@ -5,7 +5,7 @@ function Home (){
 
     return (
         <div className="homepage">
-            <Link to='/signup'>Logout</Link>
+            <Link to='/'>Logout</Link>
 
         </div>
     )
