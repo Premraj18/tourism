@@ -2,44 +2,31 @@ import React from 'react'
 import TravelItem from '../Pages/TravelItem';
 import './Jan.css'
 import Navbar from '../components/Navbar';
+import LuckData from './data/LuckData.json'
 
 const Jan = () => {
-    let data = [
-        {
-            "Url": "0",
-            "place": "Rumi Darwaza",
-            "imgUrl": "https://banarastourism.in/wp-content/uploads/2023/01/rumi-darwaza--768x512.jpg",
-            "description":"Rumi Daravaja is a famous historical landmark in the city of Lucknow, India. It was built in 1784 by Nawab Asaf-ud-Daula, the ruler of Awadh, as a symbol of his love for his wife, Begum Hazrat Mahal. "
-        },
-        {
-            "Url": "1",   
-            "place": "Ambedkar memorial Park",
-            "imgUrl": "https://banarastourism.in/wp-content/uploads/2023/01/Ambedkar-Park53873-768x459.jpg",
-            "description":"The Dr. Babasaheb Ambedkar Memorial Park in Lucknow is a fitting tribute to one of India’s most important historical figures. Ambedkar park is a good Lucknow tourist spot. "
-        },
-        {
-            "Url": "2",
-            "place": "Chota Imambara",
-            "imgUrl": "https://banarastourism.in/wp-content/uploads/2023/01/chhota-imambara.jpg",
-            "description":"The Chota Imambara in Lucknow is a beautiful example of Mughal architecture and one of the city’s most popular tourist attractions."
-        }
-    ]
+   
   return (
     <>
-    <div className="JanBgImg"></div>
     <Navbar/>
-    <div className='container'>
-      <h2 className='my-10  text-center'>January- Lucknow</h2>
-      <div className="">
-        {data.map((element) => {
+    <div className='cont'>
+      <h2 className='mt-40 text-4xl font-bold text-center underline'>January- Lucknow</h2>
+    </div>
+      <div className=" flex gap-28 flex-wrap mx-40" >
+        <div className=''>
+          <h2 className='ml-8 text-3xl font-bold mt-16'>Most Visited Destination</h2>
+        </div>
+        <div className='flex justify-center gap-x-24 gap-y-20 flex-wrap' style={{marginTop:'-80px'}}>
+        {LuckData && LuckData.map((element) => {
         //   console.log(element);
-          return <div className="" key={element.Url}>
+          return <div className="flex" key={element.Url}>
             <TravelItem title={element.place} description={element.description} imgUrl={element.imgUrl}
               newsUrl=""/>
           </div>
         })}
+        </div>
 
-      </div>
+      
     </div>
   </>
   )

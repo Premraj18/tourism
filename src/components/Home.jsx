@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import '../Pages/home.css'
 import React, { useState } from 'react'
 import Navbar from './Navbar';
+import video from '../assets/HomeImg/bg-vid.mp4'
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,22 +17,28 @@ function Home() {
 
     return (
         <>
-            <div className="bg-img"></div>
+            <div className="bg-vid w-full"> 
+                <video src={video} muted autoPlay loop type="video/mp4" ></video>
+            </div>
             <Navbar/>
-            <div className='w-44s py-6 pb-8 dropdown'>
+            <div className='w-44s dropdown'>
                 <div className="relative inline-block">
+                    <div className="hero">
+                        <h2>According To Your Month</h2>
+                        <h2 className='text-5xl mt-4 mb-8'>Search Your Holiday</h2>
+                    </div>
                     <button
                         type="button"
-                        className=" w-80 px-4 py-2 text-white bg-blue-700 font-medium rounded-lg text-sm inline-flex items-center"
+                        className=" w-96 px-4 py-4 text-white bg-blue-700 font-medium rounded-lg text-sm inline-flex items-center"
                         onClick={toggleDropdown}
                     >
-                        Click Here <svg  className="w-2.5 h-2.5 ml-52" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        Click Here <svg  className="w-2.5 h-2.5 ml-64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                         </svg>
                     </button>
 
                     {isOpen && (
-                        <div className="origin-top-right absolute right-0 mt-2 w-80 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                        <div className="origin-top-right absolute right-20 mt-2 w-96 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                             <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                 <li>
                                     <Link

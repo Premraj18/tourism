@@ -1,17 +1,6 @@
 .JanBgImg{
     width: 100%;
-    background-image: url("./Image/img2.jpg");
-    -webkit-filter: blur(0px);
-    filter: blur(2px);
-    height: calc(110vh - 8px);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    top: -22px;
 }
-.container{
-    position: absolute;
-    top: 80px;
-    left: 6%;
+.cont{
+    
 }

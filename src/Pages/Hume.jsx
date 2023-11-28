@@ -8,7 +8,7 @@ const Hume = () => {
             <div className="bg-img"></div>
             <h2 className="text">The Seasonal Journey Guide</h2>
             <div className="dropdown">
-            <div className="button">
+            <div className="button ml-80">
               <Link to='/signup'><div className="btn">Sign up</div></Link>
               <Link to='/login'><div className="btn">Sign In</div></Link>
             </div>

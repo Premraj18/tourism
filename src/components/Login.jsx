@@ -17,7 +17,7 @@ function Login() {
                 if(result.data === "Success"){
                     navigate ('/home')
                 }else{
-                    alert("envalid credentials");
+                    alert("invalid credentials");
                 }
         })
         .catch(err=> console.log(err))

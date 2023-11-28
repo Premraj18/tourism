@@ -65,7 +65,7 @@ function Login() {
                         
                         <button type="submit" className="w-full text-black bg-color">Sign up</button>
                         <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                            Register already <Link to='/login' className="font-medium text-primary-600 hover:underline dark:text-primary-500" style={{color: 'blue'}}>Login in</Link>
+                            Register already <Link to='/login' className="font-medium text-primary-600 hover:underline dark:text-primary-500" style={{color: 'blue'}}>Login</Link>
                         </p>
                     </form>
                 </div>
