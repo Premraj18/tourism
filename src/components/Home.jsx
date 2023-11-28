@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../Pages/home.css'
 import React, { useState } from 'react'
+import Navbar from './Navbar';
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,20 +17,7 @@ function Home() {
     return (
         <>
             <div className="bg-img"></div>
-            <header className="z-100 text-gray-600 body-font bg-slate-100 drop-shadow-sm fixed top-0 w-full" >
-                <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                        <span className="ml-3 text-xl">Seasonal-tour</span>
-                    </a>
-                    <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
-                        <a className="mr-5 hover:text-gray-900">Home</a>
-                        <a className="mr-5 hover:text-gray-900">About</a>
-                    </nav>
-                    <Link to='/'><button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mr-24 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Logout</button></Link>
-                </div>
-            </header>
-
-
+            <Navbar/>
             <div className='w-44s py-6 pb-8 dropdown'>
                 <div className="relative inline-block">
                     <button
@@ -46,62 +34,62 @@ function Home() {
                         <div className="origin-top-right absolute right-0 mt-2 w-80 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                             <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to='/JanMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
                                         January
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to='/FebMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
                                         February
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to='/MarMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
                                         March
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to='/AprMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
                                         April
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to='/MayMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
                                         May
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to='/JunMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
                                         June
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        to='/JulMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
@@ -109,49 +97,49 @@ function Home() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to='/AugMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
                                         August
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to='/SepMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
                                         September
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to='/OctMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
                                         October
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to='/NovMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
                                         November
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to='/DecMap'
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                         onClick={closeDropdown}
                                     >
                                         December
-                                    </a>
+                                    </Link>
                                 </li>
                                 
                             </ul>

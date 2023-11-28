@@ -1,0 +1,22 @@
+.bg2-img{
+    width: 100%;
+    background-image: url("../Map/map1.png");
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -22px;
+}
+.link{
+    height: 15px;
+    width: 15px;
+    /* border: 2px solid red; */
+    background-color: rgb(55, 193, 17);
+    border-radius: 50%;
+    position: absolute;
+    top: 49.2%;
+    left: 51.6%;
+}
