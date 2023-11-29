@@ -1,5 +1,4 @@
 import React from 'react'
-import './JanMap.css'
 import { Link } from 'react-router-dom'
 import Map from '../Map/Map'
 import JanData from '../data/JanData.json'
