@@ -1,1 +1,0 @@
-import img from '../Image/MalikGhat.jpg'

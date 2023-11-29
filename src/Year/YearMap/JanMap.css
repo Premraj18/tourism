@@ -10,13 +10,3 @@
     position: relative;
     top: -22px;
 }
-.link{
-    height: 15px;
-    width: 15px;
-    /* border: 2px solid red; */
-    background-color: rgb(55, 193, 17);
-    border-radius: 50%;
-    position: absolute;
-    top: 40%;
-    left: 51.6%;
-}
