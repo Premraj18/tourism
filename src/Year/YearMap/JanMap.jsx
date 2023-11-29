@@ -20,7 +20,7 @@ export default function JanMap() {
                         //   console.log(element);
                         return <div className="flex" key={element.Url}>
                             <TravelItem title={element.place} description={element.description} imgUrl={element.imgUrl}
-                                newsUrl="" />
+                                newsUrl="" link={element.link} />
                         </div>
                     })}
                 </div>
